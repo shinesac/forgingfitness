@@ -1,0 +1,13 @@
+header {
+    background-image: url('forgingpic.jpg');
+    background-color: black;
+    justify-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 25vh;
+
+}
+
+body {
+    min-height: 100vh;
+}
