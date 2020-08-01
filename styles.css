@@ -17,16 +17,16 @@ header {
     
 }
   
-  html::before{
+  body::before{
       content: "";
       background-image: url(flame2.jpg);
       opacity: 1;
       background-size: cover;
       position: absolute;
-      top: 0;
+      top: -150px;
       right: 0;
-      bottom: 15px;
-      left: 0;
+      bottom: 35px;
+      left: -100px;
       background-color: black;
   }
   
@@ -100,7 +100,7 @@ footer {
 
 h2,
 p {
-    color: white;
+    color: darkslategray;
 }
 .copyright {
     color: darkslategray;
