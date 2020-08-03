@@ -47,7 +47,7 @@ nav ul {
 nav li {
     list-style-type: none;
     justify-content: space-around;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 300;
     margin-right: 2%;
@@ -245,4 +245,20 @@ img {
   margin-top: 1%;
   padding: 0;
  
+}
+
+.wrapper,
+h1,
+main p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: wheat;
+    
+}
+
+h1 {
+  padding-top: 1%;
+  font-size: 30px;
+  text-decoration: underline;
 }
