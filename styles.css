@@ -27,7 +27,7 @@ header {
       background-color: black;
   }
   
-   
+
 nav {
     display: flex;
     flex-direction: row;
@@ -83,7 +83,6 @@ body {
 main {
     background-color: black;
     flex: 1;
-    /* padding: 2%; */
     opacity: .80;
     height: 50vh;
     
@@ -318,80 +317,91 @@ h1 {
 /* style form */
 
 form {
-  max-width: 400px;
-  /* padding: 15px 15px; */
-  /* background: #f4f7f8; */
-  border-radius: 8px;
+  max-width: 500px;
   font-family: Arial, Helvetica, sans-serif;
   color: wheat;
   position: relative;
-  left: 20%;
+  left: 35vw;;
   text-align: justify;
-  /* border: 5px wheat solid; */
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.formsection {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
 input[type="text"],
 input[type="tel"],
 input[type="email"],
-input[type="radio"],
-input[type="checkbox"],
 textarea {
   background: rgba(255,255,255,0.1);
-  border: none;
   font-size: 18px;
-  /* margin: 5px; */
+  margin: 5px;
   outline: 0;
   padding: 10px;
   width: 100%;
   background-color: #e8eeef;
-  color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   text-align: center;
   margin-bottom: 30px;
+  color: black;
  
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0;
+}
+
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  margin-left: 10px;
 }
 
 #comments {
   margin-bottom: 30px;
+  margin-top:10px;
+  margin-left: 10px;
 }
 
+.space {
+  margin-left: 40px;
+  margin-top:10px;
+}
 
 button {
+  background: rgba(255,255,255,0.1);
   padding: 15px 30px;
-  color: #FFF;
-  background-color: #4bc970;
-  font-size: 18px;
+  color: white;
+  background-color: tomato;
+  font-size: 25px;
   text-align: center;
   font-style: normal;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid #3ac162;
+  border: 1px solid black;
   border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 label {
   display: inline-block;
-  margin-bottom: 8px;
-  /* margin-top: 20px; */
-  /* padding-right: 40px; */
-  /* margin-left: 5%;
-  margin-right: 5%; */
-  /* padding-left: 50px; */
-  margin-left: 30px;
+  margin:0;
+  margin-left: 10px;
+ 
 }
 
-label.light {
-  font-weight: 300;
-  display: inline;
+#formtitle {
+  text-decoration: none;
+  font-size: 30px;
 }
 
-
-/* .makerow {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-around; }*/

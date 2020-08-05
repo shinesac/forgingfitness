@@ -12,7 +12,7 @@
                 
     </head>
     
-    <body>
+    <body id="fixfire">
             <header>
                 <nav>
                     <img src="fflogo2.png" id="logo" alt="logo for Forging Fitness displaying hammer coming down on an anvil.
@@ -29,44 +29,52 @@
             </header>
 
     <main>
-        <!-- <h1>Find Out More Today By Submitting the Form Below!</h1> -->
-        <div class="contact" id="contact">
-            <form action="index.html" name ="form" method="post" class="form">
-              <h2 class="reportform">Get Started!</h2>
-              <div class="makerow">
-              <label for="firstname"><span style= "color:red;font-weight:bold;">*</span>First Name</label>
-                <input type="text" id="firstName" name="firstName" class="required" required="text">
-              <label for="lastName"><span style="color:red;font-weight:bold;">*</span>Last Name</label>
-                <input type ="text" id="lastName" name="lastName" class="required" required="text">
-              </div>
-              <div class="makerow"> 
-              <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX">
-              <label for="email"> E-mail:</label>
-                  <input type="email" name="email" id="email" placeholder="youremail@mail.com" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-               </div>   
-                <label for="preferredcontact" >Preferred Contact Method:</label>
-                <div >
-                    <label for="preferredcontacttel">Phone</label>
-                        <input type="radio" name="preferredcontact" id="preferredcontacttel" value="Phone">
-                    <label for="preferredcontactmail">E-mail</label> 
-                        <input type="radio" name="preferredcontact" id="preferredcontactmail" value="E-mail">
-                </div>   
-                <label for="program">Which program(s) are you interested in:</label>
-                <div class="makerow">
-                    <label for="intothefire">Into the Fire</label>
-                         <input type="checkbox" name="program" id="intothefire" value="Into the Fire">
-                    <label for="thequench">The Quench</label>
-                        <input type="checkbox" name="program" id="thequench" value="The Quench">
-                    <label for="fit&finish">Fit & Finish</label>
-                        <input type="checkbox" name="program" id="fit&finish" value="Fit & Finish">
+        <h1 id="formtitle">Find Out More Today By Submitting the Form Below!</h1>
+          <form action="index.html" name ="form" method="post" class="form">
+              <div class="formsection">
+                <div class="contact" id="contact">
+                    <label for="firstname"><span style= "color:red;font-weight:bold;">*</span>First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="required" required="text">
                 </div>
-                <label for="comments">Questions/Comments/Additional information you would like me to know:</label>
-                  <textarea id="comments" name="comments"> </textarea>
-              <button type="submit" class="submit" id="submit" onclick="reportClickHandler()">Submit</button>
-              <button type="reset">Reset</button>
-              <p id="reqfield">*Required Fields</p>
-            </form>
+                <div>
+                    <label for="lastName"><span style="color:red;font-weight:bold;">*</span>Last Name</label>
+                    <input type ="text" id="lastName" name="lastName" class="required" required="text">
+                </div>
+             </div>
+            
+             <div class="formsection">
+                 <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX">
+                 </div>
+                 <div>
+                    <label for="email"> E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="user@domain.com" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                  </div>
+                </div>
+
+              <div class="contact">
+                    <label for="preferredcontact" >Preferred Contact Method:</label>
+                    <label for="preferredcontacttel" class="space">Phone</label>
+                    <input type="radio" name="preferredcontact" id="preferredcontacttel" value="Phone">
+                    <label for="preferredcontactmail" class="space">E-mail</label> 
+                    <input type="radio" name="preferredcontact" id="preferredcontactmail" value="E-mail"> 
+              </div><br>
+              <div>
+                    <label for="program">Which program(s) are you interested in:</label> <br>
+                    <label for="intothefire" class="space">Into the Fire</label>
+                    <input type="checkbox" name="program" id="intothefire" value="Into the Fire">
+                    <label for="thequench" class="space">The Quench</label>
+                    <input type="checkbox" name="program" id="thequench" value="The Quench">
+                    <label for="fit&finish" class="space">Fit & Finish</label>
+                    <input type="checkbox" name="program" id="fit&finish" value="Fit & Finish"> 
+              </div><br>
+          <label for="comments">Questions/Comments/Additional information you would like me to know:</label>
+            <textarea id="comments" name="comments"> </textarea>
+                          <button type="submit" class="submit" id="submit" onclick="reportClickHandler()">Submit</button>
+        
+        <p id="reqfield"><span style="color:red;font-weight:bold;">*</span>Required Fields</p>
+          </form>
 
         
     </main>
