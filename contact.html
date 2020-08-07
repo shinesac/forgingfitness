@@ -8,6 +8,7 @@
           
         <title>Forging Fitness</title>
         <link href= "normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="styles.css" rel="stylesheet">
                 
     </head>
@@ -29,7 +30,7 @@
             </header>
 
     <main>
-        <h1 id="formtitle">Find Out More Today By Submitting the Form Below!</h1>
+        <!-- <h1 id="formtitle">Find Out More Today By Submitting the Form Below!</h1> -->
           <form action="index.html" name ="form" method="post" class="form">
               <div class="formsection">
                 <div class="contact" id="contact">
@@ -49,7 +50,7 @@
                  </div>
                  <div>
                     <label for="email"> E-mail:</label>
-                    <input type="email" name="email" id="email" placeholder="user@domain.com" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    <input type="email" name="email" id="email" placeholder="user@domain.com" >
                   </div>
                 </div>
 
@@ -71,7 +72,7 @@
               </div><br>
           <label for="comments">Questions/Comments/Additional information you would like me to know:</label>
             <textarea id="comments" name="comments"> </textarea>
-                          <button type="submit" class="submit" id="submit" onclick="reportClickHandler()">Submit</button>
+                          <button type="submit" class="submit" id="submit" onclick="reportClickHandler()">Find Out More!</button>
         
         <p id="reqfield"><span style="color:red;font-weight:bold;">*</span>Required Fields</p>
           </form>
@@ -80,8 +81,24 @@
     </main>
 
     <footer>
-      <img src="logo5.1.png" id="kieologo">
-        <p class="copyright"><small>&copy;2020 - Created by KIEO Web Solutions  </small></p>
+
+      <div id="social">
+        <p> <small>Follow Us On Social Media</small></p>
+        <a href="https://www.facebook.com/Forging-Fitness-103483584751965" target="_blank" class="fa fa-facebook"></a>
+      </div> 
+
+      <div id="ffcontact">
+        <div id="location">
+         <a href="https://goo.gl/maps/fSzKd3y2BStVEKnf6"><i class="fa fa-map-marker"></i> </a><address><small> 201 Martin Mill Pike, Knoxville, TN 37920</small></address>
+        </div>
+        <i class="fa fa-phone"><small> (865) 406-2934</small> </i>
+        <i class="fa fa-envelope"> <small>theseagoatmma@gmail.com</small></i>
+      </div>
+
+      <div id="klogo">
+          <img src="logo5.1.png" id="kieologo">
+          <p class="copyright"><small>&copy;2020 - Created by KIEO Web Solutions  </small></p>
+      </div>  
     </footer>
     </body>
     

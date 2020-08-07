@@ -32,6 +32,7 @@ nav {
     display: flex;
     flex-direction: row;
     margin-right: 2%;
+    flex-wrap: wrap;
 }
 
 nav ul {
@@ -101,8 +102,12 @@ footer {
     position: relative;
     top: -1px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
+   padding-right: 5%;
+   padding-left: 5%;
+   margin-bottom: 1%;
+
 }
 
 h2,
@@ -111,9 +116,11 @@ p {
 }
 .copyright {
     color: darkslategray;
-    text-align: center;
-    margin-left: 5px;
-    padding-top: 10px;
+    /* text-align: center; */
+    /* margin-left: 5px; */
+    /* padding-top: 10px; */
+    margin:0;
+
 }
 
 
@@ -241,8 +248,8 @@ img {
 #kieologo {
   width: 35px;
   height: 40px;
-  margin-top: 1%;
-  padding: 0;
+  /* margin-top: 1%; */
+  /* padding: 0; */
  
 }
 
@@ -283,7 +290,7 @@ h1 {
 
 #certificate {
   width: 950px;
-  height: 400px;
+  height: 350px;
   margin-left: 2%;
   margin-top: 3%;
   border: white 10px solid;
@@ -300,6 +307,8 @@ h1 {
   line-height: 1.5;
  margin-top: 0;
  overflow: hidden;
+ padding-top: 3%;
+
  }
 
 #main3 {
@@ -326,6 +335,8 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 2%;
+ ;
 }
 
 .formsection {
@@ -405,3 +416,79 @@ label {
   font-size: 30px;
 }
 
+/* style footer */
+#ffcontact {
+  line-height: 0.5;
+  margin: 0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  align-items: center;
+  margin-left: 40px;
+  
+}
+
+#location {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+#dots {
+  padding-bottom: 10px;
+}
+
+/*style facebook link*/
+.fa {
+  font-size: 15px;
+  text-align: left;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+  }
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width: 30px;
+  text-align: center;
+  height: 30px;
+  padding-top:10px;
+  margin-top: 0;
+  
+}
+
+a.fa.fa-facebook:hover {
+  color: white;
+  
+}
+
+a {
+  line-height: 0.5;
+  }
+
+  #social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #social p {
+    margin:0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  #klogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+  }
