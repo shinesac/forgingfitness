@@ -7,7 +7,7 @@
 header {
   padding-top: 2%;
   margin-bottom: 0;
-  position: relative;
+  /* position: relative; */
   width: 100%;
   padding-bottom: 2%;
    
@@ -402,6 +402,7 @@ button {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 20px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 label {
@@ -459,7 +460,7 @@ label {
   text-align: center;
   height: 30px;
   padding-top:10px;
-  margin-top: 0;
+  margin-top: 15%;
   
 }
 
@@ -492,3 +493,92 @@ a {
     align-items: center;
     padding-top: 10px;
   }
+
+  #klogo p {
+
+    margin-top: 5%;
+  }
+
+  /* style hamburger menu */
+
+.bar1,
+.bar2,
+.bar3 {
+  background-color: white;
+  width: 50px;
+  height: 5px;
+  margin: 15px;
+  transition: 0.4s;
+}
+
+.menu {
+position: absolute;
+top: 0;
+right: 0;
+cursor: pointer;
+width: 50px;
+height: 80px;
+padding-right: 85px;
+padding-top: 5px;
+padding-left: 5px;
+margin: 2%;
+display: block;
+background-color: black;
+margin-left:10%;
+}
+
+.menu:hover {
+background-color: grey;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+-webkit-transform: rotate(-45deg) translate(-15px, 10px) ;
+transform: rotate(-45deg) translate(-15px, 10px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-15px, -15px) ;
+transform: rotate(45deg) translate(-15px, -15px);
+}
+
+ 
+@media screen and (max-width: 999px) {
+  #navigation {
+    display: none;
+  }
+
+  #navigation.change {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    text-align: center;
+  }
+
+nav li {
+  width: 200px;
+  line-height: 2;
+  
+}
+
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  #navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    }
+  
+    .menu {
+      display: none;
+    } */

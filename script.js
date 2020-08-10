@@ -1,3 +1,12 @@
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu */
+
+function onClickMenu(){
+	document.querySelector(".menu").classList.toggle("change");
+	document.getElementById("navigation").classList.toggle("change");
+}
+
+
 var slideIndex = 0;
       showSlides();
       function showSlides() {
