@@ -96,7 +96,6 @@ main {
     background-color: black;
     flex: 1;
     opacity: .80;
-    height: 50vh;
     
     
 }
@@ -658,10 +657,12 @@ nav a:hover {
   margin-bottom: 2%;
   margin-right: 5%;
   margin-left: 4%;
+  align-self: center;
 }
 
 .slideshow-container {
   top: 25%;
+  height: 50vh;
 }
 
 
@@ -701,6 +702,20 @@ footer {
 .fa {
   font-size: 10px;
 }
+
+.wrapper{
+  flex-direction: column;
+}
+
+#main3 {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+#main1 {
+  height: 50vh;
+}
 }
 
 
@@ -720,5 +735,9 @@ footer {
   .slideshow-container {
     height: 60vh;
     
+  }
+
+  main {
+    height: 50vh;
   }
 }
