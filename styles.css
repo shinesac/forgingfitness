@@ -660,7 +660,9 @@ nav a:hover {
   margin-left: 4%;
 }
 
-
+.slideshow-container {
+  top: 25%;
+}
 
 
 }
@@ -680,6 +682,6 @@ nav a:hover {
 
   .slideshow-container {
     height: 60vh;
-    top: 25%;
+    
   }
 }
