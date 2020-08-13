@@ -680,5 +680,6 @@ nav a:hover {
 
   .slideshow-container {
     height: 60vh;
+    top: 25%;
   }
 }
