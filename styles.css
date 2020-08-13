@@ -665,7 +665,44 @@ nav a:hover {
 }
 
 
+form {
+  max-width: 100vw;
+  margin: 5%;
+ left: 0;
+ text-align: left;
 }
+
+#main4 {
+  margin: 0;
+  padding: 0;
+}
+
+.formsection {
+  display: block;
+  }
+
+label {
+  margin-left: 0;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 10px;
+  padding-left: 2%;
+  padding-right: 2%
+}
+
+#ffcontact{
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.fa {
+  font-size: 10px;
+}
+}
+
 
 @media screen and (min-width: 1000px) {
   #navigation {
