@@ -582,9 +582,9 @@ nav li:last-child {
 
 body::before {
     margin: 0;
-    z-index: 1;
-    bottom: -200px;
-    opacity: 0.15
+    z-index: -1;
+    bottom: -40px;
+    /* opacity: 0.15 */
     
 }
 #logo {
@@ -606,7 +606,7 @@ header {
   margin: 0;
   padding: 0;
   display: block;
-  padding-bottom: 10%;
+  /* padding-bottom: 10%; */
 }
 
 .navbar {
@@ -615,8 +615,8 @@ header {
   background-color: white;
   margin: 0;
   margin-left: 3%;
-  margin-bottom: 1%;
-  margin-top: 1%;
+  /* margin-bottom: 1%;
+  margin-top: 1%; */
 }
 
 .menu {
@@ -660,12 +660,13 @@ nav a:hover {
 }
 
 .slideshow-container {
-  height: 60vh;
+  height: 60vh
 }
 
 .text{
   padding-bottom: 20px;
-  padding-top: 50px;
+  padding-top: 20px;
+
 
 }
 
@@ -732,11 +733,6 @@ footer {
   position: relative;
 } */
 
-#main2,
-#main3,
-#main4 {
-  height: 50vh;
-}
 
 }
 
