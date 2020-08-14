@@ -716,6 +716,14 @@ footer {
 #main1 {
   height: 50vh;
 }
+
+.slideshow-container img {
+  height: 25vh;
+}
+
+#dots {
+  padding-top: 50px;
+}
 }
 
 
