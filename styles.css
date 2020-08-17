@@ -237,19 +237,11 @@ img {
     opacity: 1
   }
 }
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px
-  }
-}
 
 #kieologo {
-  width: 35px;
-  height: 40px;
-
+  width: 30px;
+  height: 30px;
+  margin-top: 2%;
 }
 
 .wrapper,
@@ -484,7 +476,7 @@ a {
 
   #social p {
     margin:0;
-    padding-top: 10px;
+    margin-top: 3%;
     padding-bottom: 5px;
   }
 
@@ -498,7 +490,7 @@ a {
 
   #klogo p {
 
-    margin-top: 5%;
+    margin-top: 3%;
   }
 
   /* style hamburger menu */
@@ -551,6 +543,26 @@ opacity: 0;
 transform: rotate(45deg) translate(-15px, -15px);
 }
 
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .text {
+    font-size: 11px
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .slideshow-container img {
+    max-height: 40vh;
+  }
+
+  .slideshow-container {
+    max-height: 60vh;
+  }
+
+}
+
  
 @media screen and (max-width: 1199px) {
   #navigation {
@@ -582,15 +594,8 @@ nav li:last-child {
 body::before {
     margin: 0;
     z-index: -1;
-    /* bottom: -40px;  */
-}
+ }
  
-   
-
-/* body::before {
-  position: relative;
-} */
-
 #logo {
   width: 80px;
   height: 80px;
@@ -610,7 +615,6 @@ header {
   margin: 0;
   padding: 0;
   display: block;
-  /* padding-bottom: 10%; */
 }
 
 .navbar {
@@ -619,8 +623,7 @@ header {
   background-color: white;
   margin: 0;
   margin-left: 3%;
-  /* margin-bottom: 1%;
-  margin-top: 1%; */
+ 
 }
 
 .menu {
@@ -660,10 +663,6 @@ nav a:hover {
   align-self: center;
   display: block;
   margin-top: 5%;
-}
-
-.slideshow-container {
-  /* height: 60vh */
 }
 
 
@@ -729,26 +728,16 @@ footer {
   flex-direction: column;
 
 }
-/* 
-#ffcontact,
-#social,
-#klogo {
-  margin-top: 5%;
-  margin-bottom: 0;
-} */
+
 
 #main3 {
-  /* display: flex;
-  flex-direction: column; */
+ 
   display: block;
   margin-left: 0 auto;
   margin-right: 0 auto;
 
 }
 
-/* .fixfire::before {
-  position: relative;
-} */
 
 main{
   max-height: 80vh;
