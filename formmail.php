@@ -1,6 +1,7 @@
 <?php
     if(isset($_POST['submit'])){
-        $name=$_POST['name'];
+        $firstname=$_POST['firstname'];
+        $lastName=$_POST['lastName'];
         $email=$_POST['email'];
         $phone=$_POST['phone'];
         $preferredcontact=$_POST['preferredcontact'];
@@ -9,7 +10,7 @@
 
         $to='kieowebsolutions@gmail.com';
         $subject='Form Submission';
-        $message="Name: ".$name."\n"."Phone: ".$phone."\n"."PrefferedContact: ".$preferredcontact."\n"."Program: ".$program."\n". "Submitted the following: "."\n\n".$comments;
+        $message="FirstName: ".$firstname."\n"."LastName: ".$lastName."\n"."Phone: ".$phone."\n"."PrefferedContact: ".$preferredcontact."\n"."Program: ".$program."\n". "Submitted the following: "."\n\n".$comments;
         $headers="From: ".$email;
 
         if(mail($to, $subject, $message, $headers)){
