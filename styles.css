@@ -525,6 +525,26 @@ transform: rotate(45deg) translate(-15px, -15px);
   }
 }
 
+@media only screen and (max-width: 250px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (max-width: 315px) {
+  #check {
+    display: flex;
+    flex-direction: column;
+  }
+#check label {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1.25;
+}
+}
+
 @media screen and (max-width: 400px) {
   .slideshow-container img {
     max-height: 40vh;
